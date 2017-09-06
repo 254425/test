@@ -1,0 +1,13 @@
+﻿安装httpd的时候make出现错误解决方法    安装expat库。yum install expat-devel
+
+安装php7.0时,如果你在执行./configure --with-apxs2=/usr/local/apache2/bin/apxs --with-mysqli --with-pdo-mysql --enable-mbstring时，出现这样的错误
+configure：error：xml2-config not found.Please check your libxml2 installation.
+说明需要libxml2，用yum装一下：yum -y install libxml2 libxml2-devel
+装完libxml2后，就可以正常地进行php的源码安装了
+
+
+
+
+
+
+-----------------
